@@ -1,0 +1,22 @@
+@import "/src/styles/colors";
+.menu-icons {
+  display: flex;
+  flex-direction: row;
+}
+.icon-container {
+  margin: 0 0.5rem;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  color: $white;
+}
+.hidden-icon {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.icon:hover {
+  cursor: pointer;
+}
