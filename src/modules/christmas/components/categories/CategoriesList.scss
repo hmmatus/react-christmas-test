@@ -1,16 +1,35 @@
 @import "/src/styles/colors";
-.categories-list {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h2 {
-    font-size: 18px;
-    font-weight: 700;
-    color: $primary;
+.categories-container {
+  .categories-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $primary;
+    }
+    .category-button {
+      margin: 0 0.3rem;
+    }
   }
-  .category-button {
-    margin: 0 0.3rem;
+  .branch-list {
+    opacity: 0;
+    max-height: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    margin-top: 1rem;
+  }
+
+  .display-branch {
+    opacity: 1;
+    max-height: 1000px; // Adjust this value to fit your content
+    transition: opacity 0.5s ease, max-height 0.5s ease;
   }
 }

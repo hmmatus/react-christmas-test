@@ -7,5 +7,5 @@ export interface CategoryI {
 export interface CategoryDataI {
   id: string;
   name: string;
-  logo: string;
+  image: string;
 }
