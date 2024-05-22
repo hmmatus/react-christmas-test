@@ -1,0 +1,21 @@
+@import "/src/styles/colors";
+.chip-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 36px;
+  border-radius: 50px;
+  background-color: $background-secondary;
+  color: $primary;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid $primary;
+}
+.chip-selected {
+  background-color: $primary;
+  color: $white;
+}
+.chip-button:hover {
+  cursor: pointer;
+}

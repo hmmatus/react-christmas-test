@@ -1,16 +1,16 @@
-import './App.scss'
-import NavBar from './components/modules/navbar/Navbar'
+import "./App.scss";
+import NavBar from "./components/modules/navbar/Navbar";
+import ChristmasHeader from "./modules/christmas/components/header/Header";
 
 function App() {
-
   return (
     <>
-    <NavBar />
-    <main>
-      <h1>React Christmas</h1>
-    </main>
+      <NavBar />
+      <main>
+        <ChristmasHeader />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

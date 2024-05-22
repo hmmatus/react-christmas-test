@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url("../../assets/header-banner-movil.svg");
+  width: 100%;
+  height: 215px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: 768px) {
+    background-image: url("../../assets/header-banner-desktop.svg");
+    height: 300px;
+    align-items: center;
+  }
+
+  img {
+    width: 222.21px;
+    height: 110.6px;
+    @media (min-width: 768px) {
+      width: 374.42px;
+      height: 185.48px;
+    }
+  }
+}
+
+.header-categories {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    max-width: 676px;
+    justify-content: center;
+    align-items: center;
+  }
+}
