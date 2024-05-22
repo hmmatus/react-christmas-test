@@ -1,19 +1,18 @@
 import React from "react";
-import "../../Navbar.scss";
+import "./InformationButton.scss";
 interface ButtonProps {
   onClick: () => void;
   text: string;
   color?: string;
   disabled?: boolean;
-  image: string;
+  icon: JSX.Element;
 }
 
-const CustomButton: React.FC<ButtonProps> = ({
+const InformationButton: React.FC<ButtonProps> = ({
   onClick,
   text,
-  color = "blue",
   disabled = false,
-  image,
+  icon,
 }) => {
   return (
     <button
@@ -21,10 +20,10 @@ const CustomButton: React.FC<ButtonProps> = ({
       disabled={disabled}
       className="information-button"
     >
-      <img src={image} style={{ width: "1rem", height: "1rem" }} />
+      {icon}
       {text}
     </button>
   );
 };
 
-export default CustomButton;
+export default InformationButton;

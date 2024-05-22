@@ -58,3 +58,13 @@ nav {
   flex-direction: row;
   background-color: transparent;
 }
+
+.sub-menu {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,17 @@
+@import "/src/styles/colors";
+
+.sub-menu-icons {
+  display: none;
+  flex-direction: row;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  .icon {
+    color: $text-dark;
+    margin: 0 1rem;
+  }
+}

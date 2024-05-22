@@ -2,6 +2,7 @@ import "./Navbar.scss";
 import SearchInput from "./elements/inputs/search/SearchInput";
 import { IoMdMenu } from "react-icons/io";
 import MenuIcons from "./elements/menu/menuIcons/MenuIcons";
+import SubMenuIcons from "./elements/menu/subMenu/SubMenuIcons";
 
 const NavBar = () => {
   return (
@@ -26,7 +27,9 @@ const NavBar = () => {
           <MenuIcons />
         </div>
       </nav>
-      <div className="info-container"></div>
+      <div className="sub-menu">
+        <SubMenuIcons />
+      </div>
     </header>
   );
 };
