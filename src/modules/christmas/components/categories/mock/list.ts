@@ -8,7 +8,22 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        logo: "/src/modules/christmas/assets/categories/berry-christmas.svg",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+      },
+      {
+        id: "berry",
+        name: "Berry Christmas",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+      },
+      {
+        id: "berry",
+        name: "Berry Christmas",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+      },
+      {
+        id: "berry",
+        name: "Berry Christmas",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
       },
     ],
   },
@@ -19,7 +34,7 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        logo: "/src/modules/christmas/assets/categories/berry-christmas.svg",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
       },
     ],
   },
@@ -30,7 +45,7 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        logo: "/src/modules/christmas/assets/categories/berry-christmas.svg",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
       },
     ],
   },
@@ -41,7 +56,7 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        logo: "/src/modules/christmas/assets/categories/berry-christmas.svg",
+        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
       },
     ],
   },
