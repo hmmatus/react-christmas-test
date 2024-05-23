@@ -5,7 +5,6 @@ import CatalogItem from "../catalogItem/CatalogItem";
 import "./CatalogList.scss";
 import { useEffect, useState } from "react";
 import CatalogCarrousel from "../catalogCarrousel/CatalogCarrousel";
-import { openUrl } from "../../../../../utils/openUrl";
 
 type CatalogListComponentProps = {
   catalog: CatalogItemI;
@@ -21,7 +20,9 @@ const CatalogListComponent = ({
   const { isLoading, data, refetch } = useQuery("catalogCategories", () => {
     return fetch("https://fakestoreapi.com/products").then((res) => res.json());
   });
-
+  const onRedirect = (url: string) => {
+    window.location.replace(url);
+  };
   const handleSeeProducts = () => {
     setIsCatalogOpen(true);
     refetch();
@@ -68,7 +69,7 @@ const CatalogListComponent = ({
             <CatalogItem
               key={index}
               item={category}
-              onClick={() => openUrl(category.url)}
+              onClick={() => onRedirect(category.url)}
             />
           ))}
         </div>
@@ -77,7 +78,7 @@ const CatalogListComponent = ({
             <CatalogItem
               key={index}
               item={category}
-              onClick={() => openUrl(category.url)}
+              onClick={() => onRedirect(category.url)}
             />
           </div>
         ))}
