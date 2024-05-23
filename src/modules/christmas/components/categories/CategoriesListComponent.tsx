@@ -4,6 +4,8 @@ import "./CategoriesList.scss";
 import { mockCategoriesList } from "./mock/list";
 import { CategoryI } from "../../models/category.model";
 import BranchCard from "../cards/branch/BranchCard";
+import Carrousel from "../../../../components/elements/carrousel/Carrousel";
+import { BranchI } from "../../models/branch.model";
 const CategoriesListComponent = () => {
   const [selectedCategory, setSelectedCategory] = useState<CategoryI | null>(
     null
@@ -14,6 +16,9 @@ const CategoriesListComponent = () => {
     } else {
       setSelectedCategory(category);
     }
+  };
+  const onRedirect = (branch: BranchI) => {
+    window.open(branch.url, "_blank", "noopener,noreferrer");
   };
   return (
     <div className="categories-container">
@@ -29,9 +34,20 @@ const CategoriesListComponent = () => {
         ))}
       </div>
       <div className={`branch-list ${selectedCategory && "display-branch"}`}>
-        {selectedCategory?.data.map((branch) => (
-          <BranchCard branch={branch} />
-        ))}
+        <Carrousel
+          swiperProps={{
+            slidesPerView: 3,
+            spaceBetween: 50,
+          }}
+          items={selectedCategory?.data || []}
+          renderItem={(item) => (
+            <BranchCard
+              onclick={() => onRedirect(item)}
+              branch={item}
+              key={item.id}
+            />
+          )}
+        />
       </div>
     </div>
   );

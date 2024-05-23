@@ -1,16 +1,17 @@
-import { Branch } from "../../../models/branch.model";
+import { BranchI } from "../../../models/branch.model";
 import "./BranchCard.scss";
 type BranchCardProps = {
-  branch: Branch;
+  branch: BranchI;
+  onclick?: () => void;
 };
-const BranchCard = ({ branch }: BranchCardProps) => {
+const BranchCard = ({ branch, onclick }: BranchCardProps) => {
   return (
-    <div className="branch-card">
+    <button className="branch-card" onClick={onclick}>
       <div className="branch-icon-container">
         <img className="image" src={branch.image} />
       </div>
       <p className="title">{branch.name}</p>
-    </div>
+    </button>
   );
 };
 
