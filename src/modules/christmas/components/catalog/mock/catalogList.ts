@@ -227,7 +227,7 @@ export const CatalogList: CatalogItemI[] = [
       },
       {
         title: "Villas",
-        img: "/react-christmas-testberry/two.png",
+        img: "/react-christmas-test/berry/two.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
