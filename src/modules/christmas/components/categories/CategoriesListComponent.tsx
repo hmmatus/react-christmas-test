@@ -6,6 +6,7 @@ import { CategoryI } from "../../models/category.model";
 import BranchCard from "../cards/branch/BranchCard";
 import Carrousel from "../../../../components/elements/carrousel/Carrousel";
 import { BranchI } from "../../models/branch.model";
+import { openUrl } from "../../../../utils/openUrl";
 const CategoriesListComponent = () => {
   const [selectedCategory, setSelectedCategory] = useState<CategoryI | null>(
     null
@@ -18,7 +19,7 @@ const CategoriesListComponent = () => {
     }
   };
   const onRedirect = (branch: BranchI) => {
-    window.open(branch.url, "_blank", "noopener,noreferrer");
+    openUrl(branch.url);
   };
   return (
     <div className="categories-container">
@@ -42,7 +43,7 @@ const CategoriesListComponent = () => {
           items={selectedCategory?.data || []}
           renderItem={(item) => (
             <BranchCard
-              onclick={() => onRedirect(item)}
+              onClick={() => onRedirect(item)}
               branch={item}
               key={item.id}
             />

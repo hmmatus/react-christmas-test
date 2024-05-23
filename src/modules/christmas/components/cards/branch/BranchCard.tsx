@@ -2,11 +2,11 @@ import { BranchI } from "../../../models/branch.model";
 import "./BranchCard.scss";
 type BranchCardProps = {
   branch: BranchI;
-  onclick?: () => void;
+  onClick?: () => void;
 };
-const BranchCard = ({ branch, onclick }: BranchCardProps) => {
+const BranchCard = ({ branch, onClick }: BranchCardProps) => {
   return (
-    <button className="branch-card" onClick={onclick}>
+    <button className="branch-card" onClick={onClick}>
       <div className="branch-icon-container">
         <img className="image" src={branch.image} />
       </div>
