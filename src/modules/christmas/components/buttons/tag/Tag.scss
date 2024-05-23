@@ -1,6 +1,13 @@
 .tag-button {
   width: 60px;
   height: 60px;
+  border: 0;
+  background-color: transparent;
+}
+
+.tag-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .tag-button:hover {
