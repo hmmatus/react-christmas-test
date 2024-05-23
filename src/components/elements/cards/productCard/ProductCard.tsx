@@ -1,3 +1,4 @@
+import { handleLongTitle } from "../../../../utils/handleLongTitles";
 import LikeIcon from "../../buttons/icons/like/LikeIcon";
 import "./ProductCard.scss";
 type ProductCardProps = {
@@ -13,7 +14,7 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
       </div>
       <div className="product-card-information">
         <p className="product-card-subtitle">{product.category}</p>
-        <h3 className="product-card-title">{product.title}</h3>
+        <h3 className="product-card-title">{handleLongTitle(product.title)}</h3>
         <p className="product-card-subtitle">Vendido por siman</p>
         <p className="product-card-price">${product.price}</p>
       </div>
