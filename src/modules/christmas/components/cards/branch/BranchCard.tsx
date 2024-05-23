@@ -1,5 +1,5 @@
 import { Branch } from "../../../models/branch.model";
-
+import "./BranchCard.scss";
 type BranchCardProps = {
   branch: Branch;
 };
@@ -7,9 +7,9 @@ const BranchCard = ({ branch }: BranchCardProps) => {
   return (
     <div className="branch-card">
       <div className="branch-icon-container">
-        <img src={branch.image} />
+        <img className="image" src={branch.image} />
       </div>
-      <p>{branch.name}</p>
+      <p className="title">{branch.name}</p>
     </div>
   );
 };
