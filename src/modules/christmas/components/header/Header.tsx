@@ -4,7 +4,7 @@ const ChristmasHeader = () => {
   return (
     <>
       <section className="header">
-        <img src="/src/modules/christmas/assets/header-image.svg" />
+        <img src="/header-image.svg" />
       </section>
       <section className="header-categories">
         <CategoriesListComponent />

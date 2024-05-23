@@ -8,25 +8,25 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
     ],
@@ -38,7 +38,7 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
     ],
@@ -50,7 +50,7 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
     ],
@@ -62,7 +62,7 @@ export const mockCategoriesList: CategoryI[] = [
       {
         id: "berry",
         name: "Berry Christmas",
-        image: "/src/modules/christmas/assets/berry/berry-icon.svg",
+        image: "/berry/berry-icon.svg",
         url: "www.google.com",
       },
     ],
