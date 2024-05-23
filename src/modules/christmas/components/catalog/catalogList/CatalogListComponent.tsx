@@ -1,4 +1,3 @@
-import Carrousel from "../../../../../components/elements/carrousel/Carrousel";
 import { CatalogItemI } from "../../../models/catalog.model";
 import TagButton from "../../buttons/tag/TagButton";
 import CatalogItem from "../catalogItem/CatalogItem";
@@ -31,6 +30,7 @@ const CatalogListComponent = ({
             <TagButton key={index} tag={tag} />
           ))}
         </div>
+        <button className="products-button">Ver productos</button>
       </div>
       <div className="popular-categories">
         <div className="grid-rows-2">
