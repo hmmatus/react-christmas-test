@@ -6,6 +6,7 @@ import "./CatalogList.scss";
 import { useEffect, useState } from "react";
 import CatalogCarrousel from "../catalogCarrousel/CatalogCarrousel";
 import { openUrl } from "../../../../../utils/openUrl";
+import Carrousel from "../../../../../components/elements/carrousel/Carrousel";
 
 type CatalogListComponentProps = {
   catalog: CatalogItemI;
@@ -31,9 +32,6 @@ const CatalogListComponent = ({
     setIsCatalogOpen(false);
   };
 
-  useEffect(() => {
-    console.log("isCatalogOpen", isCatalogOpen);
-  }, [isCatalogOpen]);
   return (
     <div className={`catalog-list-container ${className ?? ""}`}>
       <div className="banner">
@@ -73,7 +71,7 @@ const CatalogListComponent = ({
           ))}
         </div>
         {catalog.categories.slice(2, 4).map((category, index) => (
-          <div className="category-item">
+          <div className="category-item" key={index}>
             <CatalogItem
               key={index}
               item={category}
@@ -81,6 +79,18 @@ const CatalogListComponent = ({
             />
           </div>
         ))}
+      </div>
+      <div className="other-products">
+        <Carrousel
+          items={catalog.categories.slice(4)}
+          swiperProps={{
+            slidesPerView: 2,
+            spaceBetween: 10,
+          }}
+          renderItem={(item) => (
+            <CatalogItem item={item} onClick={() => openUrl(item.url)} />
+          )}
+        />
       </div>
     </div>
   );
