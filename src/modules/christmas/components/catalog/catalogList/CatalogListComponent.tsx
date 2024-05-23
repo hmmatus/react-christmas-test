@@ -1,4 +1,6 @@
+import Carrousel from "../../../../../components/elements/carrousel/Carrousel";
 import { CatalogItemI } from "../../../models/catalog.model";
+import TagButton from "../../buttons/tag/TagButton";
 import CatalogItem from "../catalogItem/CatalogItem";
 import "./CatalogList.scss";
 
@@ -23,7 +25,13 @@ const CatalogListComponent = ({
       <div
         className="main"
         style={{ backgroundImage: `url(${catalog.main.background})` }}
-      ></div>
+      >
+        <div className="tags">
+          {catalog.main.tags.map((tag, index) => (
+            <TagButton key={index} tag={tag} />
+          ))}
+        </div>
+      </div>
       <div className="popular-categories">
         <div className="grid-rows-2">
           {catalog.categories.slice(0, 2).map((category, index) => (
@@ -44,7 +52,6 @@ const CatalogListComponent = ({
           </div>
         ))}
       </div>
-      <div className="offers"></div>
     </div>
   );
 };
