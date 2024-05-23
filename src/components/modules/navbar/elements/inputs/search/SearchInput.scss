@@ -1,0 +1,25 @@
+@import "/src/styles/colors.scss";
+.search-input {
+  display: none;
+  color: $white;
+  height: 44px;
+  padding: 0 0.5rem;
+  align-items: center;
+  flex-direction: row;
+  background-color: $primary-dark;
+  border-radius: 8px;
+  border: 0;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  p {
+    margin: 0 1rem;
+  }
+}
+.search-input:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+@import "/src/styles/colors";
+.information-button {
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-dark;
+  border: 0;
+}
+.information-button:hover {
+  cursor: pointer;
+}
