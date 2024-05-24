@@ -2,7 +2,6 @@
   "name": "react-christmas",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://hmmatus.github.io/react-christmas-test",
   "type": "module",
   "scripts": {
     "dev": "vite",
