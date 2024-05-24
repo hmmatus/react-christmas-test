@@ -89,16 +89,16 @@ export const CatalogList: CatalogItemI[] = [
     ],
   },
   {
-    bannerImg: "/berry/banner.png",
+    bannerImg: "/winter/banner.png",
     main: {
       buttonTitle: "Ver productos",
-      background: "/berry/tag-background.png",
+      background: "/winter/tag-background.png",
       tags: [
         {
           url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
           position: {
             top: "20%",
-            left: "10%",
+            left: "20%",
             right: "10%",
             bottom: "20%",
           },
@@ -134,22 +134,22 @@ export const CatalogList: CatalogItemI[] = [
     },
     categories: [
       {
-        title: "Arbol y Guirnaldas",
-        img: "/berry/one.png",
+        title: "Adornos navidenos",
+        img: "/winter/one.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
-        title: "Villas",
-        img: "/berry/two.png",
+        title: "Nacimientos",
+        img: "/winter/two.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
-        title: "Esferas",
-        img: "/berry/three.png",
+        title: "Decoracion",
+        img: "/winter/three.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
-        title: "Luces",
+        title: "Arboles Navidenos",
         img: "/berry/four.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
