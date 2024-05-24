@@ -2,7 +2,7 @@
 
 ## Installation
 
-- install dependencies
+- Install dependencies
 
 ```bash
 npm install
@@ -15,3 +15,7 @@ npm run dev # Run in development
 npm run build # Build project
 npm run preview # check preview after build
 ```
+
+# Deployed URL
+
+https://react-christmas-test-rn3wzyaav.vercel.app/
