@@ -31,7 +31,6 @@ const TagButton = ({ tag, onClick }: TagButtonProps) => {
       }}
     >
       <TagIcon
-        className="tag-icon"
         fillColor={isHovering ? "#EF3742" : "#fff"}
         fillCartColor={isHovering ? "#fff" : "#EF3742"}
       />

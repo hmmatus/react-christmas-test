@@ -3,7 +3,6 @@ interface Props extends React.SVGProps<SVGSVGElement> {
   fillCartColor: string;
   pathClassName?: string;
 }
-import "./Tag.scss";
 const TagIcon = ({
   fillColor = "#FFF",
   fillCartColor = "#EF3742",
@@ -11,8 +10,8 @@ const TagIcon = ({
 }: Props) => {
   return (
     <svg
-      width="100%"
-      height="100%"
+      width="163px"
+      height="166px"
       viewBox="0 0 163 166"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
