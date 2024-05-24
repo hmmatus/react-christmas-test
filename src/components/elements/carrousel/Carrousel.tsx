@@ -1,5 +1,5 @@
 import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "./Carrousel.scss";
@@ -19,10 +19,9 @@ const Carrousel = <T,>({
 }: CarrouselProps<T>) => {
   return (
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar]}
+      modules={[Navigation, Pagination]}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
       className="swiper"
       {...swiperProps}
     >

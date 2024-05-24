@@ -1,18 +1,23 @@
 @import "/src/styles/colors";
 .product-card {
-  width: 250px;
-  height: 325px;
+  width: 100%; // make the card take up the full width of its parent
+  max-width: 300px;
+  height: 100%; // let the height adjust based on the content
   border-radius: 16px;
   background-color: $white;
   .product-card-image {
     position: relative;
     width: 100%;
-    min-height: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
     .image {
       width: 100%;
+      max-width: 200px;
       height: 100%;
-      object-fit: contain;
+      object-fit: fill;
     }
     .like-button {
       position: absolute;
@@ -24,7 +29,7 @@
     padding: 10px;
     .product-card-subtitle {
       font-weight: 400;
-      font-size: 12px;
+      font-size: 1.1rem;
     }
     .product-card-title {
       font-size: 1.2rem;
@@ -32,17 +37,25 @@
       color: $text-dark;
     }
     .product-card-price {
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: $text-dark;
+      margin-top: 1rem;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .product-card {
+    width: 100%; // make the card take up the full width of its parent
+    max-width: 300px;
+    height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .product-card {
-    width: 150px;
-    .product-card-image {
-      height: 150px;
-    }
+    width: 100%; // make the card take up the full width of its parent
+    max-width: 300px;
+    height: auto;
   }
 }

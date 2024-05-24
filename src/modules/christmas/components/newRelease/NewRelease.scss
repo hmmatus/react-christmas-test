@@ -1,0 +1,31 @@
+@mixin release-container {
+  width: 100%;
+  height: auto;
+  margin: 0 0.5rem;
+  @media (min-width: 768px) {
+    max-width: 1000px;
+    margin: 0;
+  }
+}
+.new-release {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .release-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    @include release-container;
+
+    .release-button {
+      border: none;
+      background-color: transparent;
+      font-size: 1rem;
+    }
+  }
+  .release-content {
+    @include release-container;
+  }
+}
