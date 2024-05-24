@@ -18,6 +18,7 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
         <p className="product-card-subtitle">Vendido por siman</p>
         <p className="product-card-price">${product.price}</p>
       </div>
+      <button className="add-to-cart-button">Agregar al carrito</button>
     </div>
   );
 };

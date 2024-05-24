@@ -21,7 +21,6 @@ const Carrousel = <T,>({
     <Swiper
       modules={[Navigation, Pagination]}
       navigation
-      pagination={{ clickable: true }}
       className="swiper"
       {...swiperProps}
     >
