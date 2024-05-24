@@ -6,14 +6,6 @@
   max-width: 100vw;
   height: 100%;
   padding: 2rem;
-  .product-card-image {
-    width: 100%;
-    height: 100px;
-
-    img {
-      object-fit: cover;
-    }
-  }
   @media (min-width: 1024px) {
     max-width: 100%;
   }

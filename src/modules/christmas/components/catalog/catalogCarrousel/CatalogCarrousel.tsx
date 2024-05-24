@@ -21,8 +21,18 @@ const CatalogCarrousel = ({
     <div className="catalog-carrousel">
       <Carrousel
         swiperProps={{
-          slidesPerView: 3,
-          spaceBetween: 0,
+          slidesPerView: 2,
+          spaceBetween: 10,
+          breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+          },
         }}
         key="catalog-carrousel"
         items={data}
