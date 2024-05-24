@@ -17,5 +17,4 @@ npm run preview # check preview after build
 ```
 
 # Deployed URL
-
-https://react-christmas-test-rn3wzyaav.vercel.app/
+https://react-christmas-test.vercel.app/
