@@ -35,7 +35,7 @@ const NewRelease = () => {
                 },
               }}
               items={data}
-              renderItem={(item) => (
+              renderItem={(item: any) => (
                 <ProductCard key={item.id} product={item} />
               )}
             />
