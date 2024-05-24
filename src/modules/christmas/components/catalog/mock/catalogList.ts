@@ -2,9 +2,9 @@ import { CatalogItemI } from "../../../models/catalog.model";
 
 export const CatalogList: CatalogItemI[] = [
   {
-    bannerImg: "/berry/banner.png",
+    bannerImg: "/react-christmas-test/berry/banner.png",
     main: {
-      background: "/berry/tag-background.png",
+      background: "/react-christmas-test/berry/tag-background.png",
       buttonTitle: "Ver productos",
       tags: [
         {
@@ -48,51 +48,51 @@ export const CatalogList: CatalogItemI[] = [
     categories: [
       {
         title: "Arbol y Guirnaldas",
-        img: "/berry/one.png",
+        img: "/react-christmas-test/berry/one.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Villas",
-        img: "/berry/two.png",
+        img: "/react-christmas-test/berry/two.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Esferas",
-        img: "/berry/three.png",
+        img: "/react-christmas-test/berry/three.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Luces",
-        img: "/berry/four.png",
+        img: "/react-christmas-test/berry/four.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Preparate para navidad",
-        img: "/berry/five.png",
+        img: "/react-christmas-test/berry/five.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Decoraciones navideñas",
-        img: "/berry/six.png",
+        img: "/react-christmas-test/berry/six.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Esenciales de celebración",
-        img: "/berry/seven.png",
+        img: "/react-christmas-test/berry/seven.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Regalos y mas",
-        img: "/berry/1.png",
+        img: "/react-christmas-test/berry/1.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
     ],
   },
   {
-    bannerImg: "/berry/banner.png",
+    bannerImg: "/react-christmas-test/berry/banner.png",
     main: {
       buttonTitle: "Ver productos",
-      background: "/berry/tag-background.png",
+      background: "/react-christmas-test/berry/tag-background.png",
       tags: [
         {
           url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
@@ -135,51 +135,51 @@ export const CatalogList: CatalogItemI[] = [
     categories: [
       {
         title: "Arbol y Guirnaldas",
-        img: "/berry/one.png",
+        img: "/react-christmas-test/berry/one.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Villas",
-        img: "/berry/two.png",
+        img: "/react-christmas-test/berry/two.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Esferas",
-        img: "/berry/three.png",
+        img: "/react-christmas-test/berry/three.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Luces",
-        img: "/berry/four.png",
+        img: "/react-christmas-test/berry/four.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Preparate para navidad",
-        img: "/berry/five.png",
+        img: "/react-christmas-test/berry/five.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Decoraciones navideñas",
-        img: "/berry/six.png",
+        img: "/react-christmas-test/berry/six.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Esenciales de celebración",
-        img: "/berry/seven.png",
+        img: "/react-christmas-test/berry/seven.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Regalos y mas",
-        img: "/berry/1.png",
+        img: "/react-christmas-test/berry/1.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
     ],
   },
   {
-    bannerImg: "/berry/banner.png",
+    bannerImg: "/react-christmas-test/berry/banner.png",
     main: {
       buttonTitle: "Ver productos",
-      background: "/berry/tag-background.png",
+      background: "/react-christmas-test/berry/tag-background.png",
       tags: [
         {
           url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
@@ -222,42 +222,42 @@ export const CatalogList: CatalogItemI[] = [
     categories: [
       {
         title: "Arbol y Guirnaldas",
-        img: "/berry/one.png",
+        img: "/react-christmas-test/berry/one.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Villas",
-        img: "/berry/two.png",
+        img: "/react-christmas-test/berry/two.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Esferas",
-        img: "/berry/three.png",
+        img: "/react-christmas-test/berry/three.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Luces",
-        img: "/berry/four.png",
+        img: "/react-christmas-test/berry/four.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Preparate para navidad",
-        img: "/berry/five.png",
+        img: "/react-christmas-test/berry/five.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Decoraciones navideñas",
-        img: "/berry/six.png",
+        img: "/react-christmas-test/berry/six.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Esenciales de celebración",
-        img: "/berry/seven.png",
+        img: "/react-christmas-test/berry/seven.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
       {
         title: "Regalos y mas",
-        img: "/berry/1.png",
+        img: "/react-christmas-test/berry/1.png",
         url: "https://sv.siman.com/cojin-reversible-wiinter--823467406/p",
       },
     ],
