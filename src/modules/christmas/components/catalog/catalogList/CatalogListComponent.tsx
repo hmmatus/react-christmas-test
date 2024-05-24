@@ -3,7 +3,7 @@ import { CatalogItemI } from "../../../models/catalog.model";
 import TagButton from "../../buttons/tag/TagButton";
 import CatalogItem from "../catalogItem/CatalogItem";
 import "./CatalogList.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CatalogCarrousel from "../catalogCarrousel/CatalogCarrousel";
 import { openUrl } from "../../../../../utils/openUrl";
 import Carrousel from "../../../../../components/elements/carrousel/Carrousel";
