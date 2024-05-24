@@ -3,8 +3,10 @@ import { CatalogItemI } from "../../../models/catalog.model";
 import TagButton from "../../buttons/tag/TagButton";
 import CatalogItem from "../catalogItem/CatalogItem";
 import "./CatalogList.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CatalogCarrousel from "../catalogCarrousel/CatalogCarrousel";
+import { openUrl } from "../../../../../utils/openUrl";
+import Carrousel from "../../../../../components/elements/carrousel/Carrousel";
 
 type CatalogListComponentProps = {
   catalog: CatalogItemI;
@@ -20,9 +22,7 @@ const CatalogListComponent = ({
   const { isLoading, data, refetch } = useQuery("catalogCategories", () => {
     return fetch("https://fakestoreapi.com/products").then((res) => res.json());
   });
-  const onRedirect = (url: string) => {
-    window.location.replace(url);
-  };
+
   const handleSeeProducts = () => {
     setIsCatalogOpen(true);
     refetch();
@@ -32,9 +32,6 @@ const CatalogListComponent = ({
     setIsCatalogOpen(false);
   };
 
-  useEffect(() => {
-    console.log("isCatalogOpen", isCatalogOpen);
-  }, [isCatalogOpen]);
   return (
     <div className={`catalog-list-container ${className ?? ""}`}>
       <div className="banner">
@@ -69,19 +66,31 @@ const CatalogListComponent = ({
             <CatalogItem
               key={index}
               item={category}
-              onClick={() => onRedirect(category.url)}
+              onClick={() => openUrl(category.url)}
             />
           ))}
         </div>
         {catalog.categories.slice(2, 4).map((category, index) => (
-          <div className="category-item">
+          <div className="category-item" key={index}>
             <CatalogItem
               key={index}
               item={category}
-              onClick={() => onRedirect(category.url)}
+              onClick={() => openUrl(category.url)}
             />
           </div>
         ))}
+      </div>
+      <div className="other-products">
+        <Carrousel
+          items={catalog.categories.slice(4)}
+          swiperProps={{
+            slidesPerView: 2,
+            spaceBetween: 10,
+          }}
+          renderItem={(item) => (
+            <CatalogItem item={item} onClick={() => openUrl(item.url)} />
+          )}
+        />
       </div>
     </div>
   );

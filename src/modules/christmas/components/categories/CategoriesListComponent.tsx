@@ -25,8 +25,9 @@ const CategoriesListComponent = () => {
     <div className="categories-container">
       <div className="categories-list">
         <h2>Compra por</h2>
-        {mockCategoriesList.map((category) => (
+        {mockCategoriesList.map((category, index) => (
           <ChipButton
+            key={index}
             className="category-button"
             text={category.name}
             onClick={() => handleCategoryClick(category)}

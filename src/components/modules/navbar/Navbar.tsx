@@ -11,7 +11,10 @@ const NavBar = () => {
         <div className="header-right">
           <div className="header-right-icons">
             <a href="/">
-              <img src="/logo-header.svg" alt="Header logo" />
+              <img
+                src="/react-christmas-test/logo-header.svg"
+                alt="Header logo"
+              />
             </a>
             <button className="menu-button">
               <IoMdMenu className="menu-icon" />
